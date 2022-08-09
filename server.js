@@ -24,7 +24,9 @@ mongoose
   })
   .then(() => console.log("Connected Successfully"))
   .catch((err) => console.log(err));
-
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
 // middlewares
 app.use("/pictures", express.static(__dirname + "/assets/pics"));
 

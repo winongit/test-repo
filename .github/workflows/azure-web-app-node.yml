@@ -10,9 +10,6 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./auction-backend
     steps:
       - name: "Create env file"
         run: |
